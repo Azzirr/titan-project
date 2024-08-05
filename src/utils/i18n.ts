@@ -4,11 +4,19 @@ const resources = {
   pl: {
     translation: {
       welcome: "Dzień dobry!",
+      recipes: "Przepisy",
+      cart: "Koszyk",
+      roulette: "Ruletka",
+      categories: "Kategorie",
     },
   },
   en: {
     translation: {
       welcome: "Welcome!",
+      recipes: "Recipes",
+      cart: "Cart",
+      roulette: "Roulette",
+      categories: "Categories",
     },
   },
 };
