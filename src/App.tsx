@@ -2,9 +2,11 @@ import "./App.css";
 import Home from "./pages/Home";
 import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
-import Recipes from "./pages/Recipes";
 import Roulette from "./pages/Roulette";
 import Cart from "./pages/Cart";
+import CategoryList from "./pages/CategoryList";
+import CurrentRecipe from "./pages/CurrentRecipe";
+import CurrentCategory from "./pages/CurrentCategory";
 
 function App() {
   const { t } = useTranslation();
@@ -12,7 +14,12 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/recipes" element={<Recipes />} />
+        <Route path="/category-list" element={<CategoryList />} />
+        <Route
+          path="/category-list/:categoryName"
+          element={<CurrentCategory />}
+        />
+        <Route path="/current-recipe" element={<CurrentRecipe />} />
         <Route path="/roulette" element={<Roulette />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>

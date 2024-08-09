@@ -2,13 +2,14 @@ import { useTranslation } from "react-i18next";
 import { Beef, Shuffle, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import ListOfRecipes from "@/components/ListOfRecipes";
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <div className="flex flex-col items-center space-y-4">
       <div>
-        <Link to="/recipes" className="no-decoration">
+        <Link to="/category-list" className="no-decoration">
           <Button className="w-[300px]">
             <Beef />
             <span className="ml-2 text-2xl">{t("recipes")}</span>
@@ -35,6 +36,7 @@ export default function Home() {
           </Button>
         </Link>
       </div>
+      <ListOfRecipes />
     </div>
   );
 }
