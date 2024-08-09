@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "name": "breakfast",
+      "recipes": [
+        {
+          "id": 1,
+          "title": "Pancakes"
+        },
+        {
+          "id": 2,
+          "title": "Omelette"
+        },
+        {
+          "id": 3,
+          "title": "Eggs"
+        }
+      ]
+    },
+    {
+      "name": "drinks",
+      "recipes": [
+        {
+          "id": 1,
+          "title": "Milk"
+        }
+      ]
+    }
+  ]
+}
