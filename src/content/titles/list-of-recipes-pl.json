@@ -5,11 +5,13 @@
       "recipes": [
         {
           "id": 1,
-          "title": "Pancakes"
+          "title": "Pancakes",
+          "link": "pl-chicken"
         },
         {
           "id": 2,
-          "title": "Omelette"
+          "title": "Omelette",
+          "link": "pl-beef"
         },
         {
           "id": 3,

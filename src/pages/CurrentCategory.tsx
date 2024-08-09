@@ -1,13 +1,12 @@
 import { useParams, Link } from "react-router-dom";
-import { Button } from "@/components/ui/button"; // Zakładając, że Button jest importowany stąd
+import { Button } from "@/components/ui/button";
 import recipesData from "@/content/titles/list-of-recipes-pl.json";
 
 export default function CurrentCategory() {
   const { categoryName } = useParams<{ categoryName: string }>();
 
-  // Znajdź kategorię na podstawie nazwy
   const category = recipesData.categories.find(
-    (cat) => cat.name.toLowerCase() === categoryName?.toLowerCase()
+    (category) => category.name.toLowerCase() === categoryName?.toLowerCase()
   );
 
   return (
